@@ -25,7 +25,7 @@ Again, please note that `Clear Containers`_ can run on top of other distribution
    Need to check CL version - do we need the version that gets Docker 1.14-rc4 and CC2.0 integrated into its bundles for instance - which will be >9250 at least.
 
 .. attention::
-   Do we support this under a VM, and shall we doucment that here? - for instance CL under KVM under another distro? That may be a common use case to test out CL and CC.
+   Do we support this under a VM, and shall we doucment that here? - for instance CL under KVM under another distro? That may be a common use case to test out CL and CC. [Samuel] I think we should document that in a separate document.
 
 After this installation you will be able to launch Docker_ container payloads using either the default Docker_ (``runc``) Linux Container runtime or the `Clear Containers`_ QEMU/KVM hypervisor based runtime - ``clr-oci-runtime``.
 
