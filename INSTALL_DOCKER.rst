@@ -228,19 +228,13 @@ Then edit the Docker_ systemd unit file ExecStart to make `Clear Containers`_ th
 Install the Clear Container container kernel image
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. attention::
-   fix the FIXME in the below paragraph - which bundle installed this?
-
-`Clear Containers`_ utilise a root filesystem and Linux kernel image to run the Docker_ container payloads. The root filesystem was installed by the ``FIXME`` bundle. The kernel image can be obtained from the `Clear Linux`_ download site:
-
-.. attention::
-   This needs modifying to cover the bundle and also the correct download URL
+`Clear Containers`_ utilise a root filesystem and Linux kernel image to run the Docker_ container payloads. The kernel was installed by the linux-container-testing RPM. The root filesystem image can be obtained from the `Clear Linux`_ download site:
 
   ::
 
     sudo mkdir -p /var/lib/clr-oci-runtime/data/{image,kernel}
     cd /var/lib/clr-oci-runtime/data/image/
-    sudo curl -O some_magic_place
+    sudo curl -O https://download.clearlinux.org/releases/8900/clear/clear-8900-containers.img.xz
     sudo unxz clear-8900-containers.img.xz
     sudo mv clear-8900-containers.img clear-containers.img
     sudo cp /usr/lib/kernel/vmlinux-4.5-9.container.testing /var/lib/clr-oci-runtime/data/kernel/vmlinux.container
