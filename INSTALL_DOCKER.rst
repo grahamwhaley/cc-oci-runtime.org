@@ -174,20 +174,6 @@ Download the CC 2.0 code
     make
     sudo make install
 
-Setup docker proxy
-~~~~~~~~~~~~~~~~~~
-
-.. attention::
-   This is Intel internal specific I believe? - if so, confirm and **delete** this section if there needs to be no equivalent for an external party.
-
-  ::
-
-    sudo mkdir -p /lib/systemd/system/docker-upstream.service.d/
-    cat << EOF | sudo tee -a /lib/systemd/system/docker-upstream.service.d/proxy.conf
-    [Service]
-    Environment=add_your_proxy_server_here
-    EOF
-
 Restart Docker
 ~~~~~~~~~~~~~~
 
