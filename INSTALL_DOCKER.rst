@@ -141,12 +141,9 @@ Install the Docker bundle
 
 We can now install the `Clear Linux`_ bundle that containers Docker_:
 
-.. attention::
-   Here we should list the bundles required to get Docker installed
-
   ::
 
-    sudo swupd bundle-add opencontainers-dev -u http://clearlinux-sandbox.jf.intel.com/update -F staging
+    sudo swupd bundle-add opencontainers-dev
 
 Add your user to the KVM and Docker groups
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
