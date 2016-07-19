@@ -1,8 +1,8 @@
 .. contents::
 .. sectnum::
 
-``Installing Clear Containers 2.0 in Docker``
-=============================================
+``Installing Clear Containers 2.0 into Clear Linux``
+====================================================
 
 Introduction
 ------------
@@ -13,12 +13,13 @@ Introduction
 
 This document details how to install Docker-1.12-rc4 and the necessary parts of `Clear Containers`_  into a `Clear Linux`_ distribution.
 
-You will need to have a `Clear Linux`_ installation before commencing this procedure.
+You will need to have a `Clear Linux`_ installation before commencing this procedure, although `Clear Containers`_ do not depend on `Clear Linux`_ as a host and can be run on top of other distributions.
 
 
 Overview
 --------
 The following steps install and configure `Clear Containers`_ and Docker_ into an existing `Clear Linux`_ distribution. You will require `Clear Linux`_ version 8620 or above.
+Again, please note that `Clear Containers`_ can run on top of other distributions. Here `Clear Linux`_ is used as one example of a distribution `Clear Containers`_ can run on.
 
 .. attention::
    Need to check CL version - do we need the version that gets Docker 1.14-rc4 and CC2.0 integrated into its bundles for instance - which will be >9250 at least.
@@ -63,7 +64,7 @@ Before you try to install and run `Clear Containers`_ it is prudent to check tha
     chmod +x clear-linux-check-config.sh
     ./clear-linux-check-config.sh container
 
-This command will print a list of test results. All items should return a 'SUCCESS' status - but you can ignore the 'Nested KVM support' item if it fails - this just means you cannot run `Clear Containers`_ under another hypervisor such as KVM, but can still run `Clear Containers`_ directly on top of native `Clear Linux`_
+This command will print a list of test results. All items should return a 'SUCCESS' status - but you can ignore the 'Nested KVM support' item if it fails - this just means you cannot run `Clear Containers`_ under another hypervisor such as KVM, but can still run `Clear Containers`_ directly on top of native `Clear Linux`_ or any other distribution.
 
 Update your Clear Linux
 ~~~~~~~~~~~~~~~~~~~~~~~
