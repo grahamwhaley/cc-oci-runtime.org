@@ -86,7 +86,7 @@ Uninstall container-basic
 .. attention::
    Update this to reflect the state of affairs for the release - at that point the container-basic may have been updated to the most recent Docker??
 
-If you are on an older version of `Clear Linux`_ you may have an old version of the ``container-basic`` bundle installed, that containers an older version of Docker_. If so, remove this bundle:
+If you are on an older version of `Clear Linux`_ you may have an old version of the ``container-basic`` bundle installed, that contains an older version of Docker_. If so, remove this bundle:
 
   ::
 
